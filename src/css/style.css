@@ -1,0 +1,74 @@
+.container {
+  background-color: hsl(0, 0%, 100%);
+  padding: 30px;
+  border-radius: 8px;
+}
+
+.eggs img {
+  max-width: 100%;
+  border-radius: 8px;
+}
+.cook {
+  margin: 30px 0;
+  padding: 10px 20px;
+  background-color: hsl(330, 100%, 98%);
+  border-radius: 8px;
+}
+
+.cook h2 {
+  font-family: "outfit";
+  font-weight: 600;
+  font-size: 16px;
+  color: hsl(332, 51%, 32%);
+}
+
+.ingredients h2 {
+  color: hsl(31, 72%, 31%);
+}
+
+.instructions h2 {
+  color: hsl(31, 72%, 31%);
+  border-top: 1px solid black;
+  padding-top: 20px;
+}
+
+.instructions strong {
+  padding-left: 20px;
+
+  color: hsl(60, 1%, 22%);
+}
+
+.instructions ol {
+  list-style: none;
+}
+
+.instructions ol li {
+  counter-increment: num;
+}
+.instructions ol li::before {
+  content: counter(num) ". ";
+  color: hsl(31, 72%, 31%);
+}
+
+.nutrition h2 {
+  padding-top: 20px;
+  border-top: 1px solid black;
+  color: hsl(31, 72%, 31%);
+}
+
+.nutrition table {
+  display: flex;
+  text-align: left;
+}
+
+.nutrition tr th {
+  padding-top: 10px;
+  border-bottom: 1px solid black;
+  width: 250px;
+}
+
+.nutrition tr td {
+  border-bottom: 1px solid black;
+  color: hsl(31, 77%, 45%);
+  width: 250px;
+}
